@@ -127,6 +127,9 @@
                 }
 
                 uri = scheme + host + ":" + port;
+                if (token) {
+                    uri = uri + "/?token=" + token;
+                }
 
                 try
                 {
